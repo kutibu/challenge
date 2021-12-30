@@ -1,0 +1,440 @@
+<html>
+    <style>
+        body{
+            font-family: Roboto;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        header{
+            background-color: #5e92e0;
+            padding: 1%;
+            height: 130px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        .img_logo{
+            width: 15%;
+        }
+        #page1{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2%;
+        }
+        #page1 li{
+            width: 18%;
+            padding: 1%;
+            text-align: center;
+            list-style: none;
+        }
+        #page1 a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 150%;
+        }
+        .parallelogramme{
+            margin: auto;
+            margin-top: 5%;
+            width: 70%;
+            height: 16px;
+            -webkit-transform: skew(-60deg);
+            -moz-transform: skew(-60deg);
+            -o-transform: skew(-60deg);
+            tranform: skew(-60deg);
+        }
+        .p1{
+            background: linear-gradient(to right, #437ec0, #1c4587ff);
+        }
+        .p2{
+            background: linear-gradient(to right, #dc0709ff, #990000ff);
+        }
+        .p3{
+            background: linear-gradient(to right, #f69b00ff, #b45f06ff);
+        }
+        .p4{
+            background: linear-gradient(to right, #fae041ff, #bf9000ff);
+        }
+        .p5{
+            background: linear-gradient(to right, #52b5adff, #38761dff);
+        }
+
+
+        /* Home page */
+
+        .home_header{
+            background-color: #5e92e0;
+            padding: 1%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .img_header{
+            position: absolute;
+            width: 20%;
+        }
+        .home_header_left{
+            width: 48%;
+            color: #fff;
+            padding-top: 2%;
+        }
+        .home_header_left h1{
+            font-size: 250%;
+        }
+        .home_header_right{
+            width: 15%;
+        }
+        .home_button{
+            padding: 1%;
+            font-size: 200%;
+            border: none;
+            border-radius: 15px;
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-bottom: 5%;
+            background-color: #d9d9dd;
+        }
+        .presentation{
+            width: 80%;
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
+        .presentation h1{
+            text-align: center;
+            font-size: 200%;
+            color: #153D91;
+            margin-bottom: 5%;
+        }
+        .pres_main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .img_pres{
+            width: 33%;
+        }
+        .pres_right{
+            width: 46%;
+            padding: 2%;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: #aaaa 0px 8px 24px 5px;
+        }
+        .pres_right p{
+            font-size: 150%;
+        }
+        .actualites{
+            background-color: #c9c9c9;
+            border-bottom: 3px solid #153D91;
+            border-top: 3px solid #153D91;
+        }
+        .actu_main{
+            width: 80%;
+            padding: 1%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .actu_article{
+            width: 50%;
+        }
+        .titre_actu{
+            color: #153D91;
+            text-align: center;
+            font-size: 200%;
+        }
+        .img_actu{
+            width: 30%;
+            border-radius: 15px;
+        }
+        .actu_article article{
+            width: 70%;
+            margin: auto;
+            border: 1px solid #153D91;
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 2%;
+            margin-bottom: 2%;
+            
+        }
+        .actu_article article h1{
+            color: #153D91;
+            font-size: 150%;
+        }
+        .actu_article article a{
+            text-decoration: none;
+            margin-left: 38%;
+            color: #153D91;
+            font-size: 120%;
+        }
+        .albums{
+            width: 80%;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .albums h1{
+            color: #153D91;
+            text-align: center;
+            font-size: 200%;
+        }
+        .albums_photo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .album{
+            width: 30%;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            box-shadow: #aaaa 0px 8px 24px 5px;
+        }
+        .album img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .album h2{
+            color: #153D91;
+            margin-left: 2%;
+        }
+        .courses{
+            width: 80%;
+            margin: auto;
+            margin-top: 5%;
+        }
+        .courses h1{
+            color: #153D91;
+            text-align: center;
+            font-size: 200%;
+        }
+        .caroussel_course{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .caroussel_course img{
+            width: 20%;
+            padding: 1%;
+
+        }
+        .footer_home{
+            width: 100%;
+            height: 300px;
+            background-color: #5e92e0;
+            position: absolute;
+            margin-top: -10%;
+            z-index: -1;
+        }
+        footer{
+            padding: 2%;
+            margin-top: 5%;
+            background-color: #5e92e0;
+        }
+        .footer_main{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer_main h1{
+            color: #fff;
+            font-size: 200%;
+        }
+        .footer_main li{
+            list-style: none;
+            color: #fff;
+            margin-left: 5%;
+            font-size: 150%;
+        }
+        .aide{
+            width: 30%;
+        }
+        .dev{
+            color: #fff;
+            text-align: center;
+        }
+        .partenaires{
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .sponsor1 {  
+            width: 20%;
+        }
+        .sponsor2 {  
+            width: 25%;
+        }
+        
+        .sponsor3 {  
+            width: 8%;
+        }
+        
+        .sponsor4 {  
+            width: 15%; 
+        }
+        
+        .sponsor5 {  
+            width: 24%;
+        }
+        
+    </style>
+    <head>
+
+    </head>
+    <body>
+        <header>
+            <section class="header">
+                <img class="img_logo" src="./challenge2021.png" alt="">
+                <ul id="page1">
+                    <li><a href="">Accueil</a><div class="parallelogramme p1"></div></li>
+                    <li><a href="">Actualités</a><div class="parallelogramme p2"></div></li>
+                    <li><a href="">Challenge</a><div class="parallelogramme p3"></div></li>
+                    <li><a href="">Inscriptions</a><div class="parallelogramme p4"></div></li>
+                    <li><a href="">Contact</a><div class="parallelogramme p5"></div></li>
+                </ul>
+            </section>
+        </header>
+        <main>
+            <section class="home_header">
+                <div class="home_header_left">
+                    <h1>Bienvenue sur le site du challenge des Dunes de Flandre</h1>
+                    <button class="home_button">S'inscrire à une course</button>
+                </div>
+                <div class="home_header_right">
+                    <img class="img_header" src="./flyers.jpg" alt="">
+                </div>  
+            </section>
+            
+            <section class="presentation">
+                <h1>Le challenge des Dunes de Flandre</h1>
+                <div class="pres_main">
+                    <img class="img_pres" src="./calendrier-2018.jpg" alt="">
+
+                    <div class="pres_right">
+                        <p>
+                            Le Challenge des Dunes de Flandre est une association crée en 1991.
+                        </p>
+
+                        <p>
+                            Elle regroupe 11 courses à pied sur la Flandre dunkerquoise( ex : Les Foulées du Stadium, La rouge Flamande, …).
+                        </p>
+
+                        <p>
+                            Pour chacun que vous particeperait vous cumulerait des points par rapport a votre classment de la course.
+                        </p>
+
+
+                        <p>
+                            Après les 11 courses, une cérémonie de récompense est organiser.
+                        </p>
+
+                        <p>
+                            Pour plus d'information : Règlement du challenge
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="actualites">
+
+                <div class="actu_main">
+                    <div class="actu_article">
+
+                        <h1 class="titre_actu">Dernières actualités</h1>
+
+                        <article>
+                            <h1>Le retour du challenge</h1>
+                            
+                            <p>
+                                Après une année blanche et un début d'année compliqué, nous revoilà !
+                            </p>
+                            
+                            <a href="">Voir les article</a>
+                        </article>
+                        <article>
+                            <h1>La remise des récompenses</h1>
+                            
+                            <p>
+                                Nous sommes heureux de vous retrouver le mardi 17 décembre 2021 à Téteghem pour la ...
+                            </p>
+                            
+                            <a href="">Voir les article</a>
+                        </article>
+                    </div>
+
+                    <img class="img_actu" src="./LOGO-26-fev.jpg" alt="">
+                </div>
+
+            </section>
+
+            <section class="albums">
+                <h1>Dernières albums photos</h1>
+                <div class="albums_photo">
+                    <div class="album">
+                        <img src="./IMG_3115.jpeg" alt="">
+                        <h2>Les Foulées Vertes 2021</h2>
+                    </div>
+                    <div class="album">
+                        <img src="./IMG_4196.JPG" alt="">
+                        <h2>Les Boucles de l'Aa 2021</h2>
+                    </div>
+                    <div class="album">
+                        <img src="./IMG_4218.JPG" alt="">
+                        <h2>Le Semi-Marathon du Carnaval 2021</h2>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="courses">
+                <h1>Les courses du challenge</h1>
+                <div class="caroussel_course">
+                    <img src="./flyers.jpg" alt="">
+                    <img src="./flyers2.jpg" alt="">
+                    <img src="./flyers3.jpg" alt="">
+                </div>
+                
+            </section>
+            <div class="footer_home"></div>
+        </main>
+        <footer>
+            <div class="footer_main">
+                <div class="aide">
+                    <h1>Besoin d'aide ?</h1>
+                    <li>Foire aux questions</li>
+                    <li>Nous Contactez</li>
+                </div>
+                <div class="suivre">
+                    <h1>Nous suivre</h1>
+                    <li>Facebook</li>
+                </div>
+            </div>
+
+            <h3 class="dev">Développer par Benoit Peutevynck</h3>
+
+            
+        </footer>
+        <div class="partenaires">
+            <img class="sponsor1" src="./logo_ecoutevoir.png"/>
+            <img class="sponsor2" src="./logo_lesdunesdeflandre.png"/>
+            <img class="sponsor3" src="./logo_mcommemutuelle.png"/>
+            <img class="sponsor4" src="./logo_santepourtousdk.png"/>
+            <img class="sponsor5" src="./logo-running-conseil.png"/>
+        </div>
+    </body>
+</html>
