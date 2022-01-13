@@ -1,0 +1,388 @@
+<html>
+    <style>
+        body{
+            font-family: Roboto;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        header{
+            background-color: #5e92e0;
+            padding: 1%;
+            height: 130px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        .img_logo{
+            width: 15%;
+        }
+        #page1{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2%;
+        }
+        #page1 li{
+            width: 18%;
+            padding: 1%;
+            text-align: center;
+            list-style: none;
+        }
+        #page1 a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 150%;
+        }
+        .parallelogramme{
+            margin: auto;
+            margin-top: 5%;
+            width: 70%;
+            height: 16px;
+            -webkit-transform: skew(-60deg);
+            -moz-transform: skew(-60deg);
+            -o-transform: skew(-60deg);
+            tranform: skew(-60deg);
+        }
+        .p1{
+            background: linear-gradient(to right, #437ec0, #1c4587ff);
+        }
+        .p2{
+            background: linear-gradient(to right, #dc0709ff, #990000ff);
+        }
+        .p3{
+            background: linear-gradient(to right, #f69b00ff, #b45f06ff);
+        }
+        .p4{
+            background: linear-gradient(to right, #fae041ff, #bf9000ff);
+        }
+        .p5{
+            background: linear-gradient(to right, #52b5adff, #38761dff);
+        }
+
+
+        /*** Courses ***/
+
+        .course{
+            width: 80%;
+            margin: auto;
+        }
+        .details{
+            width: 98%;
+            padding: 1%;
+            margin-top: 2%;
+            border-radius: 15px;
+            box-shadow: #aaaa 0px 8px 24px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .details h1{
+            color: #153D91;
+            font-size: 200%;
+        }
+        .date{
+            width: 8%;
+            margin-top: 1%;
+            margin-right: 2%;
+            height: 110px;
+            background-color: #153D91;
+            color: #fff;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .date h3{
+            margin-top: -10%;
+        }
+        .date hr{
+            width: 60%;
+            background-color: #fff;
+            margin-top: -8%;
+        }
+        .course img{
+            width: 20%;
+        }
+        .detail-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .detail-course{
+            width: 30%;
+            height: 510px;
+            padding: 1%;
+            border-radius: 15px;
+            box-shadow: #aaaa 0px 8px 24px 5px;
+            text-align: center;
+            margin-top: 2%;
+        }
+        .detail-course button{
+            border: none;
+            border-radius: 10px;
+            width: 80%;
+            background-color: #38761dff;
+            color: #fff;
+            font-size: 150%;
+            padding: 2%;
+            margin-top: 5%;
+        }
+        .detail-course button:nth-child(8){
+            width: 50%;
+            background-color: #bf9000ff;
+        }
+
+        .piece-jointes{
+            width: 98%;
+            padding: 1%;
+            border-radius: 15px;
+            box-shadow: #aaaa 0px 8px 24px 5px;
+            margin-top: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .piece-jointes button{
+            width: 40%;
+            border: none;
+            border-radius: 10px;
+            background-color: #153D91;
+            color: #fff;
+            font-size: 150%;
+            padding: 2%;
+        }
+        .detail-complementaire{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .contact{
+            width: 54%;
+            padding: 1%;
+            border-radius: 15px;
+            box-shadow: #aaaa 0px 8px 24px 5px;
+            margin-top: 2%;
+        }
+        .map{
+            width: 40%;
+            padding: 1%;
+            border-radius: 15px;
+            box-shadow: #aaaa 0px 8px 24px 5px;
+            margin-top: 2%;
+        }
+
+        /*** FOOTER ***/
+
+        .footer_home{
+            width: 100%;
+            height: 300px;
+            background-color: #5e92e0;
+            position: absolute;
+            margin-top: -10%;
+            z-index: -1;
+        }
+        footer{
+            padding: 2%;
+            margin-top: 5%;
+            background-color: #5e92e0;
+        }
+        .footer_main{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer_main h1{
+            color: #fff;
+            font-size: 200%;
+        }
+        .footer_main li{
+            list-style: none;
+            color: #fff;
+            margin-left: 5%;
+            font-size: 150%;
+        }
+        .aide{
+            width: 30%;
+        }
+        .dev{
+            color: #fff;
+            text-align: center;
+        }
+        .partenaires{
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+        .sponsor1 {  
+            width: 25%;
+        }
+        .sponsor2 {  
+            width: 25%;
+        }
+        
+        .sponsor3 {  
+            width: 8%;
+        }
+        
+        .sponsor4 {  
+            width: 15%; 
+        }
+        
+        .sponsor5 {  
+            width: 22%;
+        
+        }
+    </style>
+    <head>
+        
+    </head>
+    <body>
+        <header>
+            <section class="header">
+                <img class="img_logo" src="./challenge2021.png" alt="">
+                <ul id="page1">
+                    <li><a href="">Accueil</a><div class="parallelogramme p1"></div></li>
+                    <li><a href="">Actualités</a><div class="parallelogramme p2"></div></li>
+                    <li><a href="">Challenge</a><div class="parallelogramme p3"></div></li>
+                    <li><a href="">Inscriptions</a><div class="parallelogramme p4"></div></li>
+                    <li><a href="">Contact</a><div class="parallelogramme p5"></div></li>
+                </ul>
+            </section>
+        </header>
+        <main>
+
+
+            <section class="course">
+
+                <div class="details">
+                    <div>
+                        <h1>Le Semi-Marathon du Carnaval 2022</h1>
+                        <h2>rue Albert Mahieu - Dunkerque</h2>
+                    </div>
+                    
+
+                    <div class="date">
+                        <h2>31</h2>
+                        <h3>Mars</h3>
+                        <hr>
+                    </div>
+                </div>
+
+                <!--<img src="./flyers.jpg" alt="">-->
+
+                <div class="detail-list">
+                    <div class="detail-course">
+                        <h2>21,1KM</h2>
+                        <h2>Semi-Marathon</h2>
+                        <h3>Dimanche 31 mars à 9H45</h3>
+                        <h3>Juniors à Masters</h3>
+                        <h3>2000 et avant</h3>
+                        <h3>Prix : 15€</h3>
+                        
+                        <button>S'inscrire à la course</button>
+                        <button>voir le parcours</button>
+                    </div>
+                    <div class="detail-course">
+                        <h2>2,5KM</h2>
+                        <h2>Course des Jeunes</h2>
+                        <h3>Dimanche 31 mars à 9H55</h3>
+                        <h3>Benjamins et Minimes</h3>
+                        <h3>2006 à 2011</h3>
+                        <h3>Prix : Gratuit</h3>
+                        
+                        <button>S'inscrire à la course</button>
+                        <button>voir le parcours</button>
+                    </div>
+                    <div class="detail-course">
+                        <h2>5KM</h2>
+                        <h2>Populaire</h2>
+                        <h3>Dimanche 31 mars à 10H10</h3>
+                        <h3>Cadets(tes) à Masters</h3>
+                        <h3>2002 et avant</h3>
+                        <h3>Prix : 6€</h3>
+                        
+                        <button>S'inscrire à la course</button>
+                        <button>voir le parcours</button>
+                    </div>
+                    <div class="detail-course">
+                        <h2>21,1KM</h2>
+                        <h2>Semi-Marathon</h2>
+                        <h3>Dimanche 31 mars à 9H45</h3>
+                        <h3>Juniors à Masters</h3>
+                        <h3>2000 et avant</h3>
+                        <h3>Prix : 15€</h3>
+                        
+                        <button>S'inscrire à la course</button>
+                        <button>voir le parcours</button>
+                    </div>
+                    <div class="detail-course">
+                        <h2>21,1KM</h2>
+                        <h2>Semi-Marathon</h2>
+                        <h3>Dimanche 31 mars à 9H45</h3>
+                        <h3>Juniors à Masters</h3>
+                        <h3>2000 et avant</h3>
+                        <h3>Prix : 15€</h3>
+                        
+                        <button>S'inscrire à la course</button>
+                        <button>voir le parcours</button>
+                    </div>
+                </div>
+
+                <div class="piece-jointes">
+                    <button>Bulletin d'inscription</button>
+                    <button>Fichier d'inscription pour les clubs</button>
+                </div>
+
+                <div class="detail-complementaire">
+                    <div class="contact">
+                        <h2>Site web : http://challengeddf.com</h2>
+                        <h2>Contact Organisateur : organisateur@gmail.com</h2>
+                        <h2>Contact Challenge : challenge@gmail.com</h2>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.908992021064!2d2.3897153513080367!3d51.03630157946013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc8c5c492abe9b%3A0xb95dc8dbecd0659b!2sRue%20Albert%20Mahieu%2C%2059240%20Dunkerque!5e0!3m2!1sfr!2sfr!4v1642108122497!5m2!1sfr!2sfr" width="480" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer>
+            <div class="footer_main">
+                <div class="aide">
+                    <h1>Besoin d'aide ?</h1>
+                    <li>Foire aux questions</li>
+                    <li>Nous Contactez</li>
+                </div>
+                <div class="suivre">
+                    <h1>Nous suivre</h1>
+                    <li>Facebook</li>
+                </div>
+            </div>
+
+            <h3 class="dev">Développer par Benoit Peutevynck</h3>
+
+
+        </footer>
+        <div class="partenaires">
+            <img class="sponsor1" src="./logo_ecoutevoir.png"/>
+            <img class="sponsor2" src="./logo_lesdunesdeflandre.png"/>
+            <img class="sponsor3" src="./logo_mcommemutuelle.png"/>
+            <img class="sponsor4" src="./logo_santepourtousdk.png"/>
+            <img class="sponsor5" src="./runningconseil.PNG"/>
+        </div>
+    </body>
+</html>
